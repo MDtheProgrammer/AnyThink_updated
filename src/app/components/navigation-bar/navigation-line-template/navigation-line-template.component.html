@@ -1,0 +1,16 @@
+<li class="nav__btn">
+  <button class="w-100 border-0 bg-black d-block">
+  <a [routerLink]="[naviElement.toUrl]" routerLinkActive="active" class="text-decoration-none text-dark d-flex align-items-center">
+    <div class="p-2 fs-5">
+      <fa-icon
+        class="d-flex align-items-center rounded-circle justify-content-center bg-black"
+        style="width: 38px; height: 38px; object-fit: cover; color: #ffffff"
+        [icon]="naviElement.icon"
+      ></fa-icon>
+    </div>
+      <div class="p-2 d-none d-xl-block">
+      <p class="m-0 app-white fs-5 fw-medium w-100">{{ naviElement.toWhere }}</p>
+    </div>
+  </a>
+  </button>
+</li>

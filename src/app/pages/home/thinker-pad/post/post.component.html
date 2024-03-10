@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="bg-gray p-2 pt-3 rounded-3">
+        <form [formGroup]="postForm" (ngSubmit)="onSubmitted()">
+            <div class="row">
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <input type="text" id="post-title" class="form-control" formControlName="title" placeholder="Title">
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <textarea type="text" id="post-content" class="form-control" formControlName="content" style="min-height: 150px;" placeholder="Yell out what you think"></textarea>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <input type="text" id="post-image" class="form-control" formControlName="imgPath" placeholder="Image for your idea">
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <input type="text" id="post-hashtags" class="form-control" formControlName="hashtags" placeholder="Related hashtags">
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="d-flex rounded-3 bg-app-yellow mt-2 py-2 align-items-center justify-content-between">
+                        <div class="ms-2">
+                            <fa-icon [icon]="faFaceSmileBeam" class="fs-4 me-2" style="cursor: pointer"></fa-icon>
+                            <fa-icon [icon]="faImage" class="fs-4 me-2" style="cursor: pointer"></fa-icon>
+                            <fa-icon [icon]="faLightbulb" class="fs-4 me-2" style="cursor: pointer"></fa-icon>
+                            <fa-icon [icon]="faSquarePollHorizontal" class="fs-4 me-2" style="cursor: pointer"></fa-icon>
+                        </div>
+                        <div class="d-flex me-2 align-items-center">
+                            <button type="submit" class="d-flex px-2 rounded-pill border-0 align-items-center justify-content-between bg-black">
+                                <div>
+                                    <fa-icon [icon]="faBullhorn" class="fs-4 me-2 text-white"></fa-icon>
+                                </div>
+                                <div>
+                                    <h5 class="me-1 mt-2 fw-bold text-white">Yell out</h5>
+                                </div>
+                            </button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div
+      class="container bg-black d-flex align-items-center justify-content-center shadow w-100 rounded-pill sticky-top py-2 mt-2"
+      style="min-height: 50px; max-width: 460px;"
+    >
+    <div class="d-flex align-items-center">
+        <div class="input-group ms-2">
+          <!-- mobile -->
+          <span
+            class="input-group-prepend d-lg-none"
+            type="button"
+            id="searchMenu"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            data-bs-auto-close="outside"
+          >
+            <div
+              class="input-group-text bg-gray border-0 rounded-circle text-center"
+              style="min-height: 40px"
+            >
+              <i
+                class="fa-solid fa-magnifying-glass me-2 text-muted"
+                style="font-size: 18px"
+              ></i>
+            </div>
+          </span>
+          <!-- desktop -->
+          <span
+            class="input-group-prepend d-none d-lg-block"
+            type="button"
+            id="searchMenu"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            data-bs-auto-close="outside"
+          >
+            <div
+              class="input-group-text bg-gray border-0 rounded-pill w-auto"
+              style="min-height: 25px;"
+            >
+              <fa-icon
+                class="me-2 text-muted"
+                style="font-size: 1rem"
+                [icon]="faMagnifyingGlass"
+              ></fa-icon>
+              <p class="m-0 ms-3 fs-6 text-muted">Search people, messages or mails</p>
+            </div>
+          </span>
+        </div>
+      </div>
+</div>
+

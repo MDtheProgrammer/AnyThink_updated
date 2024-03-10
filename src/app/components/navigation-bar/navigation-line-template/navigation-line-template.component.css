@@ -1,0 +1,10 @@
+
+  .active{
+    background-color: #fca311 !important;
+    background-image: linear-gradient(to bottom right, #ff7700, #fca311);
+    border-radius: 5rem;
+  }
+  .active p{
+    color: #000000 !important;
+  }
+  

@@ -1,0 +1,22 @@
+<div class="container my-4">
+    <div class="row">
+        <div class="d-flex">
+            <div class="d-flex col-10 rounded-start-4 bg-black bg-gradient shadow" style="max-height: 320px;">
+                <div class="m-3 bg-white w-100 rounded-4 align-items-center justify-content-center">
+                    <div class="ms-3">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="d-col-flex col-2 p-2 rounded-end-4 bg-black bg-gradient align-items-center justify-content-center" style="max-height: 320px;">
+               <div *ngFor="let icon of icons" class="d-flex my-1 mx-2 fs-4 bg-app-yellow align-items-center justify-content-center rounded-4 w-auto " style="min-width:20px; max-width: 45px; min-height: 45px; cursor: pointer;">
+                <fa-icon [icon]="icon" class="d-flex align-items-center justify-content-center" style="min-width: 30px; color: #281F01; object-fit: cover;"></fa-icon>
+               </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

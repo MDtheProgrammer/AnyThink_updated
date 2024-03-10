@@ -1,0 +1,18 @@
+<div class="container"> 
+      <app-company-logo></app-company-logo>
+      <ul
+      class="navbar-nav mt-4 d-flex flex-column pb-5 mb-5 rounded"
+    > 
+        <app-navigation-line-template
+          *ngFor="let navigation of navigations"
+          [naviElement]="navigation"
+          ></app-navigation-line-template>
+          <button class="bg-black">
+            <a style="cursor: pointer;" class="d-flex justify-content-center text-white mt-1 text-decoration-none" (click)="onLogout()">Logout</a>
+          </button>
+        
+    </ul>
+   
+</div>
+
+  <!-- d-md-block col-4 col-sm-2 h-100 w-md-100 fixed-top overflow-auto bg-black min-vh-100 -->

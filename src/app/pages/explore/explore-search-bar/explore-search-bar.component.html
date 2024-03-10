@@ -1,0 +1,38 @@
+<div
+      class="container-fluid bg-black d-flex align-items-center justify-content-center shadow w-100 rounded-pill sticky-top py-1 mt-2"
+      style="min-height: 56px"
+    >
+    <div class="d-flex align-items-center">
+        <!-- logo -->
+        <fa-icon
+          class="fa-beat-fade"
+          style="color: #FCA311; font-size: 2.5rem"
+          [icon]="faLightBulb"
+        ></fa-icon>
+        <!-- search bar -->
+        <div class="input-group ms-2">
+          <!-- desktop -->
+          <span
+            class="input-group-prepend d-lg-block"
+            type="button"
+            id="searchMenu"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            data-bs-auto-close="outside"
+          >
+            <div
+              class="input-group-text bg-gray border-0 rounded-pill"
+              style="min-height: 40px; min-width: 320px"
+            >
+              <fa-icon
+                class="me-2 text-muted"
+                style="font-size: 1.5rem"
+                [icon]="faMagnifyingGlass"
+              ></fa-icon>
+              <p class="m-0 fs-6 text-muted">Search AnyThink</p>
+            </div>
+          </span>
+        </div>
+      </div>
+</div>
+

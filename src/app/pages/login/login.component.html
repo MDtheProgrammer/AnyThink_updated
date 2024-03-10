@@ -1,0 +1,44 @@
+<!-- login -->
+<div class="container d-flex flex-column flex-lg-row justify-content-evenly mt-5 pt-5">
+    <!-- heading -->
+    <div class="text-center text-lg-start mt-lg-5 pt-lg-5">
+        <h1 class="text-black fw-bold fs-0">AnyThink <fa-icon [icon]="faLightbulb"
+            class="fa-fade"
+            style="color: #FCA311; font-size: 5rem"
+          ></fa-icon></h1>
+        <p class="w-75 mx-auto mx-lg-0 fs-4">Just don't think it, <br>yell or sell it out</p>
+
+    </div>
+    <!-- form  -->
+    <div style="max-width: 28rem; width: 100%;">
+        <div class="bg-black shadow rounded-4 p-3 input-group-lg">
+            <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+            <input type="email" id="email" class="form-control my-3" placeholder="Email address or phone number" ngModel name="email" required email>
+            <input type="password" id="password" class="form-control my-3" placeholder="Password" ngModel name="password" required password minlength="6">
+
+            <div *ngIf="error">
+                <h6 class="bg-danger text-white rounded-4 d-flex justify-content-center p-1 mt-5" >{{error}}</h6>
+            </div>
+                        
+            <button type="submit" class="btn btn-outline-primary w-100 my-3 fs-4 fw-bold">{{ isLoginMode ? 'Log In' : 'Sign up'}}</button>
+            
+            <a href="#" class="text-center text-white">
+                <p>Forgot password ?</p>                
+            </a>
+            
+            <!-- create form -->
+            <hr>            
+            <div class="text-center my-4">
+                <button class="btn btn-outline-success fs-5 fw-bold" type="button" (click)="onSwitchMode()" >Switch to {{ isLoginMode ? 'Sign Up' : ' Log In'}}</button>
+            </div>
+        </form>
+    </div>
+        <!-- tag -->
+        <div class="my-5 pb-5 text-center">
+            <p class="fw-bold">
+                <a href="#" class="text-decoration-none text-dark">Create a Page</a>
+                <span class="fw-normal">for a celebrity, band or business.</span>
+            </p>
+        </div>
+    </div>
+    </div>

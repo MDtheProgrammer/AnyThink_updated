@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+/* 
+  Color plattes
+  color1 - #000000
+  color2 - #14213D
+  color3 - #FCA311
+  color4 - #E5E5E5
+  color5 - #FFFFFF
+  color6 - #636B7C
+*/
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.app-white {
+  color: #ffffff !important;
+}
+.app-yellow {
+  color: #fca311 !important;
+ 
+}
+.app-blue{
+  color: #14213D;
+}
+.app-ash{
+  color: #E5E5E5;
+}
+.app-blue-gray{
+  background-color: #7D8391;
+}
+.bg-app-ash{
+  background-color: #E5E5E5;
+}
+.bg-app-blue{
+  background-color: #14213D;
+}
+.bg-app-blue-gray{
+  background-color: #7D8391;
+}
+.app-black{
+  color: #000000;
+}
+.fs-0 {
+  font-size: 4rem;
+}
+.fs-7 {
+  font-size: 0.8rem;
+}
+
+.bg-gray {
+  background-color: #f0f2f5 !important;
+}
+.nav__btn button:hover i {
+  color: #fca311 !important;
+}
+.nav__btn-active i {
+  color: #fca311 !important;
+}
+.nav__btn-active {
+  position: relative;
+}
+.nav__btn-active:before {
+  content: "";
+  position: absolute;
+  bottom: -4.5px;
+  left: 0;
+  transform: translateY(4.5px);
+  width: 100%;
+  height: 3px;
+  border-bottom: 3px solid #fca311 !important;
+}
+.bg-app-yellow {
+  background-color: #fca311 !important;
+  background-image: linear-gradient(to bottom right, #ff8800, #fca311);
+}
+
+.modal-content:hover .fa-phone {
+  color: #fca311 !important;
+}
+.modal-content:hover .fa-video {
+  color: #fca311 !important;
+}
+
+.custom-popover {
+  background-color: white;
+  width: 20rem;
+  color: #fca311 !important;
+} 
+.border-app-yellow{
+  border: 4px solid #fca311;
+}
+
+@media (min-width: 62em) {
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}

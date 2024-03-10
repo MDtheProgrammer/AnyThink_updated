@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row d-flex align-items-center justify-content-center bg-app-blue-gray">
+        <div class="d-flex align-items-center col-6 bg-app-blue rounded-5 w-100 p-4 m-4" style="min-height: 300px; max-width: 500px;">
+            <img
+            src="https://source.unsplash.com/random/1"
+            alt="avatar"
+            class="rounded-circle me-2"
+            style="width: 150px; height: 150px; object-fit: cover"
+            /> 
+            <div class="d-flex-block ms-4 text-white">
+                <h4>Dhinesh</h4>
+                <h5>Rank: 10002</h5>
+                <h5>102 <fa-icon></fa-icon> </h5>
+            </div>
+            <!-- <button class="btn btn-danger rounded-pill" (click)="onFetchData()">Fetch Data</button> -->
+        </div>
+        <hr>
+        <div class="bg-app-blue-gray rounded-4 p-4 m-2" style="max-width: 100%; min-height: 200px;">
+            <div><h2 class="d-flex justify-content-center">Ur Posts</h2></div>
+            
+            <div class="d-flex flex-wrap">
+                    <app-profile-page-card *ngFor="let post of posts" [postCard]="post"></app-profile-page-card>                
+            </div>
+        </div>
+    </div>
+</div>
