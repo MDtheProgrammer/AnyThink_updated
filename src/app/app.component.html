@@ -1,11 +1,11 @@
 <div class="container-fluid" *ngIf="isAuthenticated">
   <div class="row">
-    <div class="col-2 bg-black min-vh-100">
+    <div class="d-none d-md-block col-md-2 bg-black min-vh-100">
       <div class="sticky-top">
-        <app-navigation-bar></app-navigation-bar>
+        <app-navigation-bar class=""></app-navigation-bar>
       </div>
     </div>
-    <div class="col-10">
+    <div class="col-md-12 col-lg-10">
       <router-outlet></router-outlet>
     </div>
   </div>

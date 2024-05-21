@@ -8,8 +8,8 @@
         [icon]="naviElement.icon"
       ></fa-icon>
     </div>
-      <div class="p-2 d-none d-xl-block">
-      <p class="m-0 app-white fs-5 fw-medium w-100">{{ naviElement.toWhere }}</p>
+    <div class="p-2" [ngClass]="{shrink: clicked}">
+    <p class="m-0 app-white fs-5 fw-medium w-100">{{ naviElement.toWhere }}</p>
     </div>
   </a>
   </button>

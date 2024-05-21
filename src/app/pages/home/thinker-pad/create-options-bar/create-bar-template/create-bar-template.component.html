@@ -1,4 +1,4 @@
-<button class="mx-2 bg-app-blue rounded-3 border-0" routerLinkActive="active">
+<button class="mx-2 bg-app-blue rounded-3 border-0" routerLinkActive="active" [value]="editElement.name">
     <a [routerLink]="['/home', editElement.toOpt]">
         <div class="py-2 px-3">
             <fa-icon class="fs-3" style="color: #ffffff" [icon]="editElement.icon"></fa-icon>

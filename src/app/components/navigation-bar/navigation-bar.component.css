@@ -1,1 +1,5 @@
-
+.shrink{
+    background-color: #9b9b9b !important;
+    background-image: linear-gradient(to bottom right, #f9f9f9, #9b9b9b);
+    border-radius: 5rem;
+}

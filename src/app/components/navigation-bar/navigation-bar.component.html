@@ -3,6 +3,20 @@
       <ul
       class="navbar-nav mt-4 d-flex flex-column pb-5 mb-5 rounded"
     > 
+    <button class="w-100 border-0 bg-black d-block shrink mb-2" (click)="onShrink()">
+      <div class="text-decoration-none text-dark d-flex align-items-center">
+        <div class="p-2 fs-5">
+          <fa-icon
+            class="d-flex align-items-center rounded-circle justify-content-center bg-black"
+            style="width: 38px; height: 38px; object-fit: cover; color: #ffffff"
+            [icon]="iconChange"
+          ></fa-icon>
+        </div>
+        <div class="p-1 d-none d-xl-block">
+        <p class="m-0 app-black fs-5 fw-medium w-100">Shrink</p>
+        </div>
+      </div>
+      </button>
         <app-navigation-line-template
           *ngFor="let navigation of navigations"
           [naviElement]="navigation"

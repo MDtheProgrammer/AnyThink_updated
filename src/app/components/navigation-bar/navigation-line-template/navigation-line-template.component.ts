@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
-
 @Component({
   selector: 'app-navigation-line-template',
   templateUrl: './navigation-line-template.component.html',
@@ -9,9 +8,11 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 })
 export class NavigationLineTemplateComponent implements OnInit{
   
-  
   @Input() naviElement!: { toWhere: string, icon: IconProp, toUrl: string };
+  @Input() shrinkClicked!: boolean ;
+  
   constructor() {}
   ngOnInit() {
   }
+  clicked: boolean = this.shrinkClicked;
 }

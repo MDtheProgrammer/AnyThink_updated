@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { faSquarePlus } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -9,5 +10,6 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 })
 export class CreateBarTemplateComponent {
   @Input() editElement!: {toOpt: string, icon: IconProp, name: string};
+
   constructor(){}
 }
